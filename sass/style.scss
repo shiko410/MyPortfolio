@@ -1,0 +1,23 @@
+@charset "UTF-8";
+// ファイル名の頭に「_」を付けることでSassはcssファイルに出力しなくなります。
+// 不要なscssファイルはコメントアウトしてください。
+@import "mixin/_mixin.sass",
+		"initialize/_init_bootstrap.scss",
+		"common/_common.scss",
+        "common/_header.scss",
+        "common/_main.scss",
+        // "common/_side.scss",
+        "common/_footer.scss",
+        "media-queries/_media-tab.scss",
+        "media-queries/_media-pc.scss";
+
+// NOTE
+// 一行コメント
+
+/*
+* 複数行コメント
+*/
+
+/*!
+* 削除されないコメント
+*/
