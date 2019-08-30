@@ -20,7 +20,7 @@
         <!-- ナビゲーション -->
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
           <!-- ハンバーガーメニュー -->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" name="button">
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive" name="button">
             <!-- iconの表示 -->
             <span class="navbar-toggler-icon"></span>
             <!-- // iconの表示 -->
@@ -28,7 +28,7 @@
           <!-- // ハンバーガーメニュー -->
           <!-- メニュー項目 -->
           <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav mx-auto ml-lg-auto mr-lg-0">
               <li class="nav-item">
                 <a href="#home" class="nav-link">home</a>
               </li>
@@ -70,154 +70,384 @@
         </div>
         <!-- End Landing Page Section -->
         <!--- Bouncing Down Arrow -->
-
         <!--- // Bouncing Down Arrow -->
-      </div>
+      </div><!-- / #home -->
       <!-- End Home Section -->
     </header>
-    <div class="container">
-      <main>
-       <div class="contents">
-        <!-- Start Message Section -->
-        <div class="content">
-          <div id="message" class="offset">
-            <div class="full-screen"><!-- Full Screen -->
-              <div class="narrow">
-                <div class="row">
-                  <!-- Heading -->
-                  <div class="col-12 text-center">
-                    <h2 class="heading">message</h2>
-                    <div class="heading-underline"></div>
-                  </div>
-                  <!-- // Heading -->
-                  <!--  Article -->
-                  <h3 class="col-12">
-                    Webフリーランスへの挑戦
-                  </h3>
-                  <div class="message col-12">
-                    <article>
-                      <p>はじめまして、玉井志昂と申します。</p>
-                      <p>地方公務員を4年で辞め、タイへ移住し、フリーランスとして活動しています。</p>
-                      <p>コーディング、ホームページ制作、ECサイトなど、Web制作に関わるサポートが可能です。</p>
-                      <p>公務員時代は事務業務を一通り経験し、市の主催するイベントの企画運営に携わりました。</p>
-                      <p>丁寧に、根気強く対応できることが長所と考えており、クライアント様、そしてホームページに訪れるユーザー様にご満足いただけるサービスを一緒に作り上げようと心がけております。</p>
-                      <p>Web制作に関して、質問、ご要望などございましたら、お気軽にお問い合わせください。</p>
-                      <p>どうぞよろしくお願いいたします。</p>
-                    </article>
-                  </div>
-                  <!--  // Article -->
-                </div><!-- // Row -->
-              </div><!-- // Narrow -->
-              <div class="fixed-wrap">
-                <div class="fixed"></div><!-- ここで背景を設定する -->
-              </div>
-            </div><!-- // Full Screen --><!-- positon:relativeで背景枠を作成 -->
-          </div>
-        </div>
-        <!-- End Message Section -->
-        <!-- Start About Section -->
-        <div class="content">
-          <div id="about" class="offset">
-            <div class="full-screen"><!-- Full Screen -->
-              <div class="narrow"><!-- Narrow -->
-                <div class="row text-center">
-                  <!-- Heading -->
-                  <div class="col-12 text-center">
-                    <h2 class="heading">about</h2>
-                    <div class="heading-underline"></div>
-                  </div>
-                  <!-- // Heading -->
-                  <!--  Article -->
-                  <!-- Photo -->
-                  <div class="my-photo col-md-12 col-lg-6">
-                    <img src="./img/id-photo-2.jpg" alt="プロフィール写真" class="rounded-circle">
-                    <!-- // Photo -->
-                    <h3 class="my-name">shiko tamai</h3>
-                    <article class="text-left">
-                      <p>1992年生まれ。兵庫県出身。タイ在住。</p>
-                      <p>
-                        インドへ行ったときのカルチャーショックから世界の広さを知り、学生時代に海外を放浪。公務員に就職するも、海外への憧れが止まらず、海外移住。
-                      </p>
-                      <p>
-                        HP制作（Web制作、プログラミングをはじめ、英会話や留学、タイ生活などなんでもお気軽にお問い合わせください。
-                      </p>
-                    </article>
-                  </div>
-                  <!-- // Article -->
-                  <!-- Table -->
-                  <div class="col-md-12 col-lg-6 d-flex align-items-center">
-                    <table class="table table-bordered mx-auto bg-white">
-                      <tbody>
-                        <tr>
-                          <th scope="row">
-                            趣味
-                          </th>
-                          <td>
-                            異文化交流、英会話、プログラミング
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">
-                            経歴
-                          </th>
-                          <td>
-                            17歳でインド、ネパール旅行<br>
-                            ↓<br>
-                            神戸国際大学<br>
-                            <span class="sm">
-                              アメリカ留学<br>
-                              他、フィリピン、カナダ、タイを放浪<br>
+    <main role="main">
+      <div class="container">
+        <div class="contents">
+          <!-- Start Message Section -->
+          <div class="content">
+            <div id="message" class="offset">
+              <div class="full-screen"><!-- Full Screen -->
+                <div class="narrow">
+                  <div class="row">
+                    <!-- Heading -->
+                    <div class="col-12 text-center">
+                      <h2 class="heading">message</h2>
+                      <div class="heading-underline"></div>
+                    </div>
+                    <!-- // Heading -->
+                    <!--  Article -->
+                    <h3 class="col-12">
+                      Webフリーランスへの挑戦
+                    </h3>
+                    <div class="message col-12">
+                      <article>
+                        <p>はじめまして、玉井志昂と申します。</p>
+                        <p>地方公務員を4年で辞め、タイへ移住し、フリーランスとして活動しています。</p>
+                        <p>コーディング、ホームページ制作、ECサイトなど、Web制作に関わるサポートが可能です。</p>
+                        <p>公務員時代は事務業務を一通り経験し、市の主催するイベントの企画運営に携わりました。</p>
+                        <p>丁寧に、根気強く対応できることが長所と考えており、クライアント様、そしてホームページに訪れるユーザー様にご満足いただけるサービスを一緒に作り上げようと心がけております。</p>
+                        <p>Web制作に関して、質問、ご要望などございましたら、お気軽にお問い合わせください。</p>
+                        <p>どうぞよろしくお願いいたします。</p>
+                      </article>
+                    </div>
+                    <!--  // Article -->
+                  </div><!-- // Row -->
+                </div><!-- // Narrow -->
+                <div class="fixed-wrap">
+                  <div class="fixed"></div><!-- ここで背景を設定する -->
+                </div>
+              </div><!-- // Full Screen --><!-- positon:relativeで背景枠を作成 -->
+            </div><!-- / #message -->
+          </div><!-- / .content -->
+          <!-- End Message Section -->
+          <!-- Start About Section -->
+          <div class="content">
+            <div id="about" class="offset">
+              <div class="full-screen"><!-- Full Screen -->
+                <div class="narrow"><!-- Narrow -->
+                  <div class="row text-center">
+                    <!-- Heading -->
+                    <div class="col-12 text-center">
+                      <h2 class="heading">about</h2>
+                      <div class="heading-underline"></div>
+                    </div>
+                    <!-- // Heading -->
+
+                    <!--  Article -->
+                    <div class="my-photo col-md-12 col-lg-6">
+                      <!-- Photo -->
+                      <img src="./img/id-photo-2.jpg" alt="プロフィール写真" class="rounded-circle">
+                      <!-- // Photo -->
+                      <h3 class="my-name">shiko tamai</h3>
+                      <article class="text-left">
+                        <p>1992年生まれ。兵庫県出身。タイ在住。</p>
+                        <p>
+                          インドへ行ったときのカルチャーショックから世界の広さを知り、学生時代に海外を放浪。公務員に就職するも、海外への憧れが止まらず、海外移住。
+                        </p>
+                        <p>
+                          HP制作（Web制作、プログラミングをはじめ、英会話や留学、タイ生活などなんでもお気軽にお問い合わせください。
+                        </p>
+                      </article>
+                    </div>
+                    <!-- // Article -->
+                    <!-- Table -->
+                    <div class="col-md-12 col-lg-6 d-flex align-items-center">
+                      <table class="table table-bordered mx-auto bg-white">
+                        <tbody>
+                          <tr>
+                            <th scope="row">
+                              趣味
+                            </th>
+                            <td>
+                              異文化交流、英会話、プログラミング
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              経歴
+                            </th>
+                            <td>
+                              17歳でインド、ネパール旅行<br>
                               ↓<br>
-                              兵庫県地方公務員<br>
-                              ↓<br>
-                              タイ移住・Webエンジニア/コーダー<br>
-                            </span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">
-                            好きなこと
-                          </th>
-                          <td>
-                            新しいことに挑戦すること、<br>パソコンに触れていること
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <!-- // Table -->
-                  <div class="col-12">
-                    <a href="#contact" class="btn btn-outline-dark btn-lg">お問い合わせ</a>
-                  </div>
-                </div><!-- // Row -->
-              </div><!-- // Narrow -->
-            </div><!-- // Full Screen -->
-          </div>
-        </div>
-        <!-- End About Section -->
-        <div class="content">
-        </div>
-        <div class="content">
-        </div>
+                              神戸国際大学<br>
+                              <span class="sm">
+                                アメリカ留学<br>
+                                他、フィリピン、カナダ、タイを放浪<br>
+                                ↓<br>
+                                兵庫県地方公務員<br>
+                                ↓<br>
+                                タイ移住・Webエンジニア/コーダー<br>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              好きなこと
+                            </th>
+                            <td>
+                              新しいことに挑戦すること、<br>パソコンに触れていること
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- // Table -->
+                    <div class="col-12">
+                      <a href="#contact" class="btn btn-outline-dark btn-lg">お問い合わせ</a>
+                    </div>
+                  </div><!-- // Row -->
+                </div><!-- // Narrow -->
+              </div><!-- // Full Screen -->
+            </div><!-- / #about -->
+          </div><!-- / .content -->
+          <!-- End About Section -->
+          <!-- Start Skill Section -->
+          <div class="content">
+            <div id="skill" class="offset">
+              <div class="full-screen"><!-- Full Screen -->
+                <div class="narrow">
+                  <div class="row">
+                    <!-- Heading -->
+                    <div class="col-12 text-center">
+                      <h2 class="heading">skill</h2>
+                      <div class="heading-underline"></div>
+                    </div>
+                    <!-- icons -->
+                    <div class="box col-12">
+                      <!-- 1段目 -->
+                      <div class="icons row p-0 p-md-3">
+                        <div class="skl-icons col-12 col-md-6 d-flex mx-auto p-0">
+                          <div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
+                            <img src="img/icon/html5-color.svg" alt="html5">
+                          </div>
+                          <div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
+                            <img src="img/icon/html5-color.svg" alt="html5">
+                          </div>
+                          <div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
+                            <img src="img/icon/html5-color.svg" alt="html5">
+                          </div>
+                        </div>
+                        <div class="skl-icons col-12 col-md-6 d-flex mx-auto p-0">
+                          <div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
+                            <img src="img/icon/html5-color.svg" alt="html5">
+                          </div>
+                          <div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
+                            <img src="img/icon/html5-color.svg" alt="html5">
+                          </div>
+                          <div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
+                            <img src="img/icon/html5-color.svg" alt="html5">
+                          </div>
+                        </div>
+                      </div>
+                      <!-- 2段目 -->
+                      <div class="icons row p-0 p-md-3">
+                        <div class="skl-icons col-12 col-md-6 d-flex mx-auto p-0">
+                          <div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
+                            <img src="img/icon/html5-color.svg" alt="html5">
+                          </div>
+                          <div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
+                            <img src="img/icon/html5-color.svg" alt="html5">
+                          </div>
+                          <div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
+                            <img src="img/icon/html5-color.svg" alt="html5">
+                          </div>
+                        </div>
+                        <div class="skl-icons col-12 col-md-6 d-flex mx-auto p-0">
+                          <div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
+                            <img src="img/icon/html5-color.svg" alt="html5">
+                          </div>
+                          <div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
+                            <img src="img/icon/html5-color.svg" alt="html5">
+                          </div>
+                          <div class="skl-icon rounded-circle bg-white d-flex align-items-center mx-auto">
+                            <img src="img/icon/html5-color.svg" alt="html5">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box skls col-12 text-center">
+                      HTML, CSS, JavaScript, jQuery, PHP,  Saas, Laravel, MAMP, MySQL, Word, Excel, VBA, Power Point
+                    </div>
+                    <div class="box other-skl bg-light col-12">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th scope="row">
+                              その他のスキル
+                            </th>
+                            <td>
+                              TOEIC 860, 日本語教師養成講座420時間修了資格
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!-- <dl>
+                        <dt>その他のスキル</dt>
+                        <dd>TOEIC 860, 日本語教師養成講座420時間修了資格</dd>
+                      </dl> -->
+
+                    </div>
+                  </div><!-- // Row -->
+                </div><!-- // Narrow -->
+                <div class="fixed-wrap">
+                  <div class="fixed"></div><!-- ここで背景を設定する -->
+                </div>
+              </div><!-- // Full Screen --><!-- positon:relativeで背景枠を作成 -->
+            </div><!-- / #skill -->
+          </div><!-- / .content -->
+          <!-- End Skill Section -->
+          <!-- Start Service Section -->
+          <div class="content">
+            <div id="service" class="offset">
+              <div class="full-screen"><!-- Full Screen -->
+                <div class="narrow">
+                  <div class="row text-center">
+                    <!-- Heading -->
+                    <div class="col-12">
+                      <h2 class="heading">service</h2>
+                      <div class="heading-underline"></div>
+                    </div>
+                    <!-- // Heading -->
+                    <div class="box d-flex pt-5">
+                      <div class="col-md-6 col-lg-4">
+                        <h3>ホームページ制作</h3>
+                        <div class="service p-5">
+                          <i class="fab fa-wordpress fa-5x"></i>
+                        </div>
+                        <p class="p-3">
+                          企画から制作、運営サポートまで、お気軽にご相談ください。レスポンシブ化にも対応いたします
+                        </p>
+                      </div>
+                      <div class="col-md-6 col-lg-4">
+                        <h3>LP制作</h3>
+                        <div class="service p-5">
+                          <i class="fas fa-desktop fa-5x"></i>
+                        </div>
+                        <p class="p-3">
+                          商品紹介、イベント予約、キャンペーンなど集客アップにつながるLP制作を承ります。
+                        </p>
+                      </div>
+                      <div class="col-md-12 col-lg-4">
+                        <h3>コーディング</h3>
+                        <div class="service p-5">
+                          <i class="fas fa-code fa-5x"></i>
+                        </div>
+                        <p class="p-3">
+                          商品紹介、イベント予約、キャンペーンなど集客アップにつながるLP制作を承ります。
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- // Row -->
+                </div><!-- // Narrow -->
+              </div><!-- // Full Screen --><!-- positon:relativeで背景枠を作成 -->
+            </div><!-- / #service -->
+          </div><!-- / .content -->
+          <!-- End Service Section -->
+          <!-- Start Portfolio Section -->
+          <div class="content">
+            <div id="portfolio" class="offset">
+              <div class="full-screen"><!-- Full Screen -->
+                <div class="narrow">
+                  <div class="row">
+                    <!-- Heading -->
+                    <div class="col-12 text-center">
+                      <h2 class="heading">portfolio</h2>
+                      <div class="heading-underline"></div>
+                    </div>
+                    <div class="box col-12 d-flex">
+                      <div class="mx-auto">
+                        <img src="img/portfolio-2.png" class="swiper-slide" alt="ポートフォリオサイト">
+                      </div>
+                    </div>
+                  </div><!-- // Row -->
+                </div><!-- // Narrow -->
+                <div class="fixed-wrap">
+                  <div class="fixed"></div><!-- ここで背景を設定する -->
+                </div>
+              </div><!-- // Full Screen --><!-- positon:relativeで背景枠を作成 -->
+            </div><!-- / #portfolio -->
+          </div><!-- / .content -->
+          <!-- End Portfolio Section -->
+          <!-- Start Contact Section -->
+          <div class="content">
+            <div id="contact" class="offset">
+              <div class="full-screen"><!-- Full Screen -->
+                <div class="narrow">
+                  <div class="row">
+                    <!-- Heading -->
+                    <div class="col-12 text-center">
+                      <h2 class="heading">contact</h2>
+                      <div class="heading-underline"></div>
+                    </div>
+                    <!-- Contact Form -->
+                    <div class="d-flex col-12 col-lg-6 order-lg-2">
+                      <div class="info mx-auto">
+                        <div role="form" class="wpcf7" id="wpcf7-f5-o1" lang="ja" dir="ltr">
+                          <div class="screen-reader-response"></div>
+                          <form action="/#wpcf7-f5-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+                            <div style="display: none;">
+                              <input type="hidden" name="_wpcf7" value="5" />
+                              <input type="hidden" name="_wpcf7_version" value="5.1.1" />
+                              <input type="hidden" name="_wpcf7_locale" value="ja" />
+                              <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f5-o1" />
+                              <input type="hidden" name="_wpcf7_container_post" value="0" />
+                              <input type="hidden" name="g-recaptcha-response" value="" />
+                            </div>
+                            <p><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="名前" /></span> </p>
+                            <p><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="メールアドレス" /></span> </p>
+                            <p><span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="タイトル" /></span> </p>
+                            <p><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="内容"></textarea></span> </p>
+                            <div class="wpcf7-response-output wpcf7-display-none"></div>
+                            <p><input type="submit" value="送信" class="wpcf7-form-control wpcf7-submit" /></p>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- // Contact Form -->
+                    <!-- info -->
+                    <div class="info d-flex col-12 col-lg-6 order-lg-1">
+                      <div class="box mx-auto">
+                        <dl>
+                          <dt class="text-center p-5">連絡先</dt>
+                          <dd>Name: Shiko Tamai</dd>
+                          <dd>
+                            Address:<br>
+                            25/210 soi.29 Buakhao Village<br>
+                            Ranmkhamheang Rd, Minburi,<br>
+                            Bangkok, 10510, Thailand
+                          </dd>
+                          <dd>Tel: 050-6872-4557</dd>
+                          <span class="sm">※国番号不要です。(日本国内から発信の場合)</span>
+                          <dd>mail: shiko.tamai@outlook.com</dd>
+                        </dl>
+                        <div class="col-md-5 text-center">
+                          <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                          <a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- // info -->
+                  </div><!-- // Row -->
+                </div><!-- // Narrow -->
+              </div><!-- // Full Screen --><!-- positon:relativeで背景枠を作成 -->
+            </div><!-- / #contact -->
+          </div><!-- / .content -->
+          <!-- End Contact Section -->
+        </div><!-- / .contents -->
+      </div><!-- // .container -->
+    </main><!-- // main -->
+    <footer id="footer">
+      <div class="text-center p-4">
+        <hr class="socket">
+        &copy;Copyright ©  Shiko Tamai. All Rights Reserved.
       </div>
-    </main><!-- // .main -->
-    <div class="side"></div><!-- // .side -->
-  </div><!-- // .container -->
-  <footer id="footer">
-
-
-  </footer>
-</div><!-- // .wrapper -->
-<!--- Script Source Files -->
-<!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!-- Bootstrap -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<!-- FontAwesome -->
-<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
-<!--original js -->
-<script src="js/main.js"></script><!-- vegas, waypoints(animate.css), -->
-<!--- End of Script Source Files -->
+    </footer>
+  </div><!-- // .wrapper -->
+  <!--- Script Source Files -->
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- FontAwesome -->
+  <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+  <!--original js -->
+  <script src="js/main.js"></script>
+  <!--- End of Script Source Files -->
 </body>
 </html>

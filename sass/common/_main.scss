@@ -75,7 +75,7 @@ h2.heading {
 #message .fixed-wrap .fixed {
   /* 固定背景の設定 */
   background-image: url(../img/test.png) !important;
-  z-index: -1;
+  z-index: -2;
 }
 /* =========== About Section =========== */
 .my-photo img {
@@ -97,3 +97,30 @@ h2.heading {
 span.sm {
 	font-size: .9rem;
 }
+
+/* =========== Skill Section =========== */
+#skill .fixed {
+  /* 固定背景の設定 */
+  background-image: url(../img/test.png) !important;
+  z-index: -2;
+}
+.icon {
+	padding: 2rem;
+}
+#skill img {
+  width: 100%;
+  height:100%;
+  max-width: 100px;
+  max-height: 100px;
+  padding:1rem;
+}
+/* =========== Service Section =========== */
+
+/* =========== Portfolio Section =========== */
+#portfolio .fixed {
+  /* 固定背景の設定 */
+  background-image: url(../img/test.png) !important;
+  z-index: -2;
+}
+
+/* =========== Contact Section =========== */
