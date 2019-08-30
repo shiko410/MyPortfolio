@@ -3,3 +3,12 @@
         	MediaQuery(PC)
         　(画面サイズ 992px 以上)
 ======================================= */
+/* =========== About Section =========== */
+@media (min-width: 992px) {
+	//画面サイズが 最低でも必要 768px
+	// 992px 以上のブラウザ幅で有効
+	.my-photo img {
+    	width: 200px;
+    	max-width: none;
+	}
+}

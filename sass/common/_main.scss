@@ -2,3 +2,52 @@
 /* =======================================
                   Main
 ======================================= */
+/* スムーススクロール時の余白 */
+.offset:before {
+  display: block;
+  content: "";
+  height: 3.9rem;
+  margin-top: -3.9rem;
+}
+.full-screen {
+	width: 100vw;
+	height: auto;
+	min-height: 100vh;
+}
+.narrow {
+	width: 75%;
+	margin: 1.5rem auto;
+	padding-top: 2rem;
+}
+h3.heading {
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
+}
+.heading-underline {
+  width: 3rem;
+  height: .2rem;
+  background: #9999FF;
+  margin: 0 auto 1rem;
+}
+/* =========== About Section =========== */
+.my-photo img {
+	width: 80%;
+	height: auto;
+}
+.my-name {
+  margin: 1rem;
+  text-transform: capitalize;
+}
+#about table {
+	min-width: 405px;
+}
+#about table tbody tr th {
+  color: inherit;
+  background-color: #F8F8F8;
+  vertical-align: inherit;
+}
+span.sm {
+	font-size: .9rem;
+}

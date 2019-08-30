@@ -3,12 +3,12 @@
                   Navigation
 ======================================= */
 .navbar {
-  text-transform: uppercase; /* 大文字 */
-  font-weight: 700;
-  font-size: .9rem;
-  letter-spacing: .1rem; /* 文字間隔 */
-  background-color: transparent !important;
   color: transparent;
+  background-color: transparent !important;// .bg-dark { background-color: #343a40!important; }
+  font-size: .9rem;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  text-transform: uppercase; /* 大文字 */
 }
 .navbar-nav li {
   padding-right: .7rem;
@@ -23,3 +23,4 @@
 		background-color: transparent;
 	}
 }
+

@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap&subset=japanese");
 /* =======================================
         BootstrapのCSS初期化設定
-======================================= */
+        ======================================= */
 /*--- Extra Bootstrap Column Padding --*/
 [class*="col-"] {
   padding: 1rem;
@@ -12,8 +12,19 @@
 
 /*--- Bootstrap Mobile Gutter Fix --*/
 div.row, div.container-fluid {
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+div.container {
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: none;
+  }
 }
 
 /* =======================================
@@ -31,14 +42,13 @@ body {
                   Navigation
 ======================================= */
 .navbar {
+  color: transparent;
+  background-color: transparent !important;
+  font-size: .9rem;
+  font-weight: 700;
+  letter-spacing: .1rem;
   text-transform: uppercase;
   /* 大文字 */
-  font-weight: 700;
-  font-size: .9rem;
-  letter-spacing: .1rem;
-  /* 文字間隔 */
-  background-color: transparent !important;
-  color: transparent;
 }
 
 .navbar-nav li {
@@ -99,6 +109,7 @@ body {
   will-change: transform;
 }
 
+/* 半透明・グレーフィルター */
 .full-cover {
   background: rgba(0, 0, 0, 0.2);
   color: transparent;
@@ -136,11 +147,71 @@ body {
   text-shadow: .1rem .1rem .5rem #000;
   padding-bottom: 1.6rem;
   text-transform: capitalize;
+  /* 頭大文字 */
 }
 
 /* =======================================
                   Main
 ======================================= */
+/* スムーススクロール時の余白 */
+.offset:before {
+  display: block;
+  content: "";
+  height: 3.9rem;
+  margin-top: -3.9rem;
+}
+
+.full-screen {
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+}
+
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+
+h3.heading {
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
+}
+
+.heading-underline {
+  width: 3rem;
+  height: .2rem;
+  background: #9999FF;
+  margin: 0 auto 1rem;
+}
+
+/* =========== About Section =========== */
+.my-photo img {
+  width: 80%;
+  height: auto;
+}
+
+.my-name {
+  margin: 1rem;
+  text-transform: capitalize;
+}
+
+#about table {
+  min-width: 405px;
+}
+
+#about table tbody tr th {
+  color: inherit;
+  background-color: #F8F8F8;
+  vertical-align: inherit;
+}
+
+span.sm {
+  font-size: .9rem;
+}
+
 /* =======================================
                   Footer
 ======================================= */
@@ -148,10 +219,25 @@ body {
         	MediaQuery(TAB)
         　(画面サイズ 768px 以上)
 ======================================= */
+/* =========== About Section =========== */
+@media (min-width: 768px) {
+  .my-photo img {
+    max-width: 50%;
+  }
+}
+
 /* =======================================
         	MediaQuery(PC)
         　(画面サイズ 992px 以上)
 ======================================= */
+/* =========== About Section =========== */
+@media (min-width: 992px) {
+  .my-photo img {
+    width: 200px;
+    max-width: none;
+  }
+}
+
 /*
 * 複数行コメント
 */
