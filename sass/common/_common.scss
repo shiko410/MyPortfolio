@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* =======================================
+                  Common
+======================================= */
+body {
+  overflow-x: hidden;
+  /* ボックスの範囲内からはみ出た要素をhidden */
+  font-family: 'Lato','Kosugi Maru', sans-serif;
+  color: #505962;
+  background-color: transparent;
+}

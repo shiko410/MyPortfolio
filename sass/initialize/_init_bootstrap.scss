@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* =======================================
+        BootstrapのCSS初期化設定
+======================================= */
+
+/*--- Extra Bootstrap Column Padding --*/
+// []はCSSの属性セレクタ
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/*--- Bootstrap Mobile Gutter Fix --*/
+div.row, div.container-fluid {
+margin-left: 0px;
+margin-right: 0px;
+}

@@ -1,9 +1,13 @@
 @charset "UTF-8";
+/* GoogleFontの使用設定 */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap&subset=japanese');
 // ファイル名の頭に「_」を付けることでSassはcssファイルに出力しなくなります。
 // 不要なscssファイルはコメントアウトしてください。
 @import "mixin/_mixin.sass",
 		"initialize/_init_bootstrap.scss",
 		"common/_common.scss",
+        "common/_nav.scss",
         "common/_header.scss",
         "common/_main.scss",
         // "common/_side.scss",
@@ -21,3 +25,21 @@
 /*!
 * 削除されないコメント
 */
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/

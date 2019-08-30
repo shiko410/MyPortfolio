@@ -4,41 +4,94 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<!-- CSS Files -->
-  <!-- bootstrap -->
+  <!-- CSS Files -->
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- original css -->
-	<link rel="stylesheet" href="css/style.css">
-<!-- End of CSS Files -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- End of CSS Files -->
   <title>Document</title>
 </head>
-<body>
-<div class="wrapper">
-  <header id="header">
+<body data-spy="scroll" data-target="#navbarResponsive">
+  <div class="wrapper">
+    <header id="header">
+      <!-- Start Home Section -->
+      <div id="home">
+        <!-- ナビゲーション -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+          <!-- ハンバーガーメニュー -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" name="button">
+            <!-- iconの表示 -->
+            <span class="navbar-toggler-icon"></span>
+            <!-- // iconの表示 -->
+          </button>
+          <!-- // ハンバーガーメニュー -->
+          <!-- メニュー項目 -->
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="#home" class="nav-link">home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#message" class="nav-link">message</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">about</a>
+              </li>
+              <li class="nav-item">
+                <a href="#skill" class="nav-link">skill</a>
+              </li>
+              <li class="nav-item">
+                <a href="#service" class="nav-link">service</a>
+              </li>
+              <li class="nav-item">
+                <a href="#portfolio" class="nav-link">portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">contact</a>
+              </li>
+            </ul>
+          </div>
+          <!-- // メニュー項目 -->
+        </nav>
+        <!-- // ナビゲーション -->
+        <!-- Start Hero Image Section -->
+        <div class="hero-img">
+          <div class="home-wrap">
+            <div class="home-inner">
+              <!-- ここで背景を設定する -->
+            </div>
+          </div>
+        </div>
+        <div class="row full-cover"></div><!-- 半透明 -->
+        <div class="caption text-center">
+          <h1>shiko tamai</h1>
+          <h3>web engineer</h3>
+        </div>
+        <!-- End Landing Page Section -->
+      </div>
+      <!-- End Home Section -->
+    </header>
+    <div class="container">
+      <main>
+       <div class="contents">
+        <div class="content">
 
 
-  </header>
-  <div class="container">
-    <main>
-    	<div class="contents">
-    		<div class="content">
-    			
+        </div>
+        <div class="content">
 
-    		</div>
-    		<div class="content">
-    			
-    			
-    		</div>
-    		<div class="content">
-    			
-    			
-    		</div>
-    		<div class="content">
-    			
-    			
-    		</div>
-    	</div>
+
+        </div>
+        <div class="content">
+
+
+        </div>
+        <div class="content">
+
+
+        </div>
+      </div>
     </main><!-- // .main -->
     <div class="side"></div><!-- // .side -->
   </div><!-- // .container -->
@@ -48,15 +101,15 @@
   </footer>
 </div><!-- // .wrapper -->
 <!--- Script Source Files -->
-	<!-- jQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<!-- Bootstrap -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<!-- FontAwesome -->
-	<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
-	<!--original js -->
-	<script src="js/main.js"></script><!-- vegas, waypoints(animate.css), -->
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- FontAwesome -->
+<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+<!--original js -->
+<script src="js/main.js"></script><!-- vegas, waypoints(animate.css), -->
 <!--- End of Script Source Files -->
 </body>
 </html>

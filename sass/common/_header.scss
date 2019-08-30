@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/* =======================================
+                  Header
+======================================= */
+/*--- Fix for Fixed Navbar jumping on scroll --*/
+.fixed-top  {
+ -webkit-backface-visibility: hidden;
+// webkitは、ベンダープレフィックス
+	// ベンダープレフィックス（接頭辞）とは、ブラウザベンダーが独自の拡張機能を実装したり、草案段階の仕様を先行実装する場合に、 それが拡張機能であることを明示するために付ける識別子のこと
+	// 対応は、
+	// -o-・・・・opera
+	// -ms-・・・IE(Microsoft)
+	// -moz-・・firefox(mozilla社)
+	// -webkit-・Chrome, Safari
+// backface-visibility: 表示方法;
+	// 3D空間で変形する要素の背面の表示方法を指定
+}
+/*--- Fixed Landing Page Section --*/
+.hero-img {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  z-index: -1;
+}
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  // rect（上,右,下,左）
+  	// ボックスの左上端を基準として、上右下左のそれぞれの距離を指定します。
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* --- Hero Image --- */
+.home-inner {
+  // background-image: url(../img/test.png);
+  width: 100vw;
+  height: 100vh;
+  /* Fixed */
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+.full-cover {
+  background: rgba(0, 0, 0, 0.2);
+  color: transparent;
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100vh;
+  position: absolute;
+  top: 0%;
+  z-index: 1;
+}
+/* 文字を画像に重ねる */
+.caption {
+	width: 100%;
+	max-width: 100%;
+	position: absolute;
+	top: 38%;
+	z-index: 1;
+	color: #fff;
+	background-color: transparent;
+	h1 {
+		font-size: 3.8rem;
+		font-weight: 700;
+		letter-spacing: .3rem;
+		text-shadow: .1rem .1rem .8rem #000;
+		padding-bottom: 1rem;
+		text-transform: uppercase;
+	}
+	h3 {
+		font-size: 2rem;
+		text-shadow: .1rem .1rem .5rem #000;
+		padding-bottom: 1.6rem;
+		text-transform: capitalize;
+	}
+}
