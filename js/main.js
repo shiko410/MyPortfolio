@@ -1,3 +1,9 @@
+
+/*========== スクロールスパイの確認	 ==========*/
+// $(window).on('activate.bs.scrollspy', function (e,obj) {
+//   console.log(obj.relatedTarget);
+// });
+
 /*========== NAVBAR TRANSPARENT TO SOLID ==========*/
 /* ---------------------------------------------------------
  トップ画面でナビメニューを透過。スクロールすると表示
@@ -18,13 +24,22 @@ $(function() { //when document(DOM) loads completely.
 /* --------------------------------------------
 メニューをクリックした時、画面をスクロールしながら移動
 -------------------------------------------- */
-
-// 確認
-
-  $(window).on('activate.bs.scrollspy', function (e,obj) {
-      console.log(obj.relatedTarget);
-  });
-
+$(function(){
+   // #で始まるアンカーをクリックした場合に処理
+   $('a[href^="#"]').click(function() {
+      // スクロールの速度
+      var speed = 500; // ミリ秒
+      // アンカーの値取得
+      var href= $(this).attr("href");
+      // 移動先を取得
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      // 移動先を数値で取得
+      var position = target.offset().top;
+      // スムーススクロール
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
 
 /*========== CLOSE MOBILE NAV ON CLICK ==========*/
 /* ---------------------------------------------------------
