@@ -10,10 +10,10 @@
   margin-top: -3.9rem;
 }
 .full-screen {
-	width: 100vw;
-	height: auto;
-	min-height: 100vh;
-	position: relative;
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  position: relative;
 }
 .narrow {
 	width: 75%;
@@ -58,13 +58,14 @@ h2.heading {
   z-index: -1; /* 追記 */
 }
 .dark {
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.6);
   color: #fff;
-  padding: 8.5rem 2rem;
 }
 
+.light {
+  background: rgba(225, 225, 225, 0.5);
+  color: #000;
+}
 /* =========== Message Section =========== */
 #message h3 {
 	padding: 0 0 3rem;
@@ -74,7 +75,7 @@ h2.heading {
 }
 #message .fixed-wrap .fixed {
   /* 固定背景の設定 */
-  background-image: url(../img/test.png) !important;
+  background-image: url(../img/bg-message.jpg) !important;
   z-index: -2;
 }
 /* =========== About Section =========== */
@@ -101,7 +102,7 @@ span.sm {
 /* =========== Skill Section =========== */
 #skill .fixed {
   /* 固定背景の設定 */
-  background-image: url(../img/test.png) !important;
+  background-image: url(../img/computer.jpg) !important;
   z-index: -2;
 }
 .icon {
@@ -119,7 +120,7 @@ span.sm {
 /* =========== Portfolio Section =========== */
 #portfolio .fixed {
   /* 固定背景の設定 */
-  background-image: url(../img/test.png) !important;
+  background-image: url(../img/triangles.png) !important;
   z-index: -2;
 }
 
