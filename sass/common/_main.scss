@@ -149,3 +149,31 @@ span.sm {
 }
 
 /* =========== Contact Section =========== */
+
+/*============= TOP SCROLL =============*/
+
+.top-scroll svg.svg-inline--fa {
+  font-size: 3rem;
+  height: 1.7rem;
+  color: #53595f;
+  background: #fff;
+}
+a.top-scroll {
+  right: 1.2rem;
+  bottom: 1.2rem;
+  position: fixed;
+  opacity: .3;
+  z-index: 1000;
+  display: none;
+}
+a.top-scroll:hover {
+  opacity: .5;
+}
+footer .row p {
+  font-family: Roboto Slab;
+  letter-spacing: 0.075rem;
+}
+#contact-form .controls .btn.btn-outline-light.btn-sm.os-animation {
+  letter-spacing: 0.075rem;
+  margin-bottom: 3rem;
+}

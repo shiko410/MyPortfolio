@@ -21,6 +21,11 @@ $(function() { //when document(DOM) loads completely.
 
 // 確認
 
+  $(window).on('activate.bs.scrollspy', function (e,obj) {
+      console.log(obj.relatedTarget);
+  });
+
+
 /*========== CLOSE MOBILE NAV ON CLICK ==========*/
 /* ---------------------------------------------------------
  ハンバガーメニューでメニュー部分以外をクリックした時、メニューを閉じる
@@ -65,4 +70,16 @@ $(function(){
   });
 });
 
-
+/*========== TOP SCROLL BUTTON ==========*/
+/* ---------------------------------------------------------
+ トップへ戻る
+---------------------------------------------------------- */
+$(function() { //when document is ready
+  $(window).scroll(function() { //when webpage is scrolled
+    if ($(this).scrollTop() > 700) { //if scroll from top is more than 500
+      $('.top-scroll').fadeIn(); //display element with class 'top-scroll'; opacity increases
+    } else { //if not
+      $('.top-scroll').fadeOut(); //hide element with class 'top-scroll'; opacity decreases
+    }
+  });
+});
