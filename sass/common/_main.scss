@@ -6,8 +6,8 @@
 .offset:before {
   display: block;
   content: "";
-  height: 3.9rem;
-  margin-top: -3.9rem;
+  height: 3.45rem;
+  margin-top: -3.45rem;
 }
 .full-screen {
   width: 100vw;
@@ -15,22 +15,17 @@
   min-height: 100vh;
   position: relative;
 }
-.narrow {
-	width: 75%;
-	margin: auto;
-	padding-top: 2rem;
-}
+
 h2.heading {
   font-size: 1.9rem;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 1.9rem;
 }
 .heading-underline {
   width: 3rem;
   height: .2rem;
   background: #9999FF;
-  margin: 0 auto 1rem;
+  margin: 0 auto .5rem;
 }
 // フルスクリーン準備・画像は個別に指定
 /*--- iOS Fixed Background Image --*/
@@ -53,7 +48,7 @@ h2.heading {
   background-size: cover;
   background-position: center center;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
   will-change: transform;
   z-index: -1; /* 追記 */
 }
@@ -66,6 +61,10 @@ h2.heading {
   background: rgba(225, 225, 225, 0.5);
   color: #000;
 }
+.b-offset {
+  padding-bottom: 3.5rem;
+}
+
 /* =========== Message Section =========== */
 #message h3 {
 	padding: 0 0 2rem;
@@ -73,11 +72,12 @@ h2.heading {
 .message {
 	max-width: 700px;
   text-shadow: 2px 2px 4px #333;
+  letter-spacing: .1rem;
 }
 #message .fixed-wrap .fixed {
   /* 固定背景の設定 */
   background-image: url(../img/bg-msg.jpg) !important;
-    background-position: center center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -2;
@@ -98,29 +98,35 @@ h2.heading {
   z-index: -1;
 }
 /* =========== About Section =========== */
-.my-photo img {
-	width: 80%;
-	height: auto;
+.my-photo {
+  padding-top: 0;
+  padding-bottom: 0;
+  img {
+   width: 60%;
+   height: auto;
+ }
 }
 .my-name {
   margin: 1rem;
   text-transform: capitalize;
 }
+
 #about table {
-	min-width: 405px;
-}
-#about table tbody tr th {
-  color: inherit;
-  background-color: #F1F1F1;
-  vertical-align: inherit;
-}
-#about table tbody tr td {
-  color: inherit;
-  background-color: #F8F8F8;
-  vertical-align: inherit;
+  margin-bottom: 0;
+  tbody tr th {
+    color: inherit;
+    min-width: 5rem;
+    background-color: #F1F1F1;
+    vertical-align: inherit;
+  }
+  tbody tr td {
+    color: inherit;
+    background-color: #F8F8F8;
+    vertical-align: inherit;
+  }
 }
 span.sm {
-	font-size: .9rem;
+	font-size: .8rem;
 }
 
 /* =========== Skill Section =========== */
@@ -129,17 +135,45 @@ span.sm {
   background-image: url(../img/computer.jpg) !important;
   z-index: -2;
 }
-.icon {
-	padding: 2rem;
+.skl-icon {
+	margin: 10px auto;
+  background: -moz-radial-gradient(#FFF 40%, #9999FF 70%);
+  background: -webkit-radial-gradient(#FFF 40%, #9999FF 70%);
+  background:radial-gradient(#FFF 40%, #9999FF 70%);
 }
 #skill img {
   width: 100%;
   height:100%;
-  max-width: 100px;
-  max-height: 100px;
-  padding:1rem;
+  max-width: 70px;
+  max-height: 70px;
+  padding:.7rem;
+  // max-width: 100px;
+  // max-height: 100px;
+  // padding:1rem;
 }
+.skls p {
+    background-color: rebeccapurple;
+    opacity: .8;
+    text-shadow: black 0 0 5px;
+    border-radius: 10px;
+}
+
 /* =========== Service Section =========== */
+#service {
+  h3 {
+    font-size: 1.6rem;
+    letter-spacing: .3rem;
+  }
+  p {
+    letter-spacing: .1rem;
+    padding: 0 1rem;
+  }
+}
+.service .svg-inline--fa {
+  color: #9999FF;
+  background-color: transparent;
+}
+
 
 /* =========== Portfolio Section =========== */
 #portfolio .fixed {
@@ -149,7 +183,18 @@ span.sm {
 }
 
 /* =========== Contact Section =========== */
-
+.info {
+  letter-spacing: .1rem;
+  dt {
+    font-size: 1.1rem;
+    letter-spacing: .7rem;
+  }
+  .svg-inline--fa {
+    color: #9999FF;
+    font-size: 2rem;
+    margin: 0 .5rem;
+  }
+}
 /*============= TOP SCROLL =============*/
 
 .top-scroll svg.svg-inline--fa {

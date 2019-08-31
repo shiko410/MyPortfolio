@@ -1,14 +1,19 @@
 @charset "UTF-8";
 /* =======================================
         	MediaQuery(PC)
-        　(画面サイズ 992px 以上)
-======================================= */
-/* =========== About Section =========== */
-@media (min-width: 992px) {
+  　　(画面サイズ 768px 以上のタブレット・PC用)
+  ======================================= */
+  /* =========== About Section =========== */
+  @media (min-width: 768px) {
 	//画面サイズが 最低でも必要 768px
-	// 992px 以上のブラウザ幅で有効
+	// 768px 以上のブラウザ幅で有効
+	/* スムーススクロール時の余白 */
+	.offset:before {
+		height: 3.9rem;
+		margin-top: -3.9rem;
+	}
 	.my-photo img {
-    	width: 200px;
-    	max-width: none;
+		width: 200px;
+		max-width: none;
 	}
 }

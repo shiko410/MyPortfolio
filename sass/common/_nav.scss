@@ -9,11 +9,15 @@
   font-weight: 700;
   letter-spacing: .1rem;
   text-transform: uppercase; /* 大文字 */
+  &.show {
+  	background: rgba(0, 0, 0, 0.7);
+  }
 }
 .navbar-nav li {
   padding-right: .7rem;
 }
 #navbarResponsive ul li a {
+	font-size: 1rem;
 	color: #fff;
 	padding: .8rem;
 	&.active,
@@ -23,6 +27,7 @@
 		background-color: transparent;
 	}
 }
+
 
 
 /*====== JS setting ======*/

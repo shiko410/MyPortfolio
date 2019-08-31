@@ -1,13 +1,36 @@
 @charset "UTF-8";
 /* =======================================
         	MediaQuery(TAB)
-        　(画面サイズ 768px 以上)
-======================================= */
-/* =========== About Section =========== */
-@media (min-width: 768px) {
-	//画面サイズが 最低でも必要 768px
-	// 768px 以上のブラウザ幅で有効
-	.my-photo img {
-    	max-width: 50%;
+ 　(画面サイズ 576px 以上のスマホ・タブレット用)
+ ======================================= */
+ @media (min-width: 576px) {
+	//画面サイズが 最低でも必要 576px
+	// 576px 以上のブラウザ幅で有効
+	/* ============== Header ============== */
+	.caption {
+		h1 {
+			font-size: 3.8rem;
+		}
+		h2 {
+			font-size: 2rem;
+		}
 	}
+	/* ============ Main Common =========== */
+	.narrow {
+		width: 75%;
+		margin: auto;
+		padding-top: 2rem;
+	}
+	h2.heading {
+		margin-bottom: 1.9rem;
+	}
+
+	/* =========== About Section =========== */
+	.my-photo img {
+		max-width: 50%;
+	}
+	#about table {
+		min-width: 405px;
+	}
+
 }
