@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- vegas -->
   <link rel="stylesheet" href="css/vegas.min.css">
-  <!-- animate.cssの読み込み -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" type="text/css">
+  <!-- aos (scroll animation) -->
+  <link rel="stylesheet" href="css/aos.css">
   <!-- original css -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/arrow.css">
@@ -69,7 +69,7 @@
           </div>
         </div>
         <div class="row full-cover"></div><!-- 半透明・グレーフィルター -->
-        <div class="caption text-center">
+        <div class="caption text-center" data-aos="zoom-in-up" data-aos-duration="2000">
           <h1>shiko tamai</h1>
           <h3>web engineer</h3>
         </div>
@@ -91,26 +91,30 @@
             <div class="container">
               <div class="row">
                 <!-- Heading -->
-                <div class="col-12 text-center">
+                <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="600">
                   <h2 class="heading">message</h2>
                   <div class="heading-underline"></div>
                 </div>
                 <!-- // Heading -->
                 <!--  Article -->
-                <h3 class="col-12 text-center">
-                  Webフリーランスへの挑戦
-                </h3>
-                <div class="message col-12 mx-auto">
-                  <article>
-                    <p>はじめまして、玉井志昂と申します。</p>
-                    <p>地方公務員を4年で辞め、タイへ移住し、フリーランスとして活動しています。</p>
-                    <p>コーディング、ホームページ制作、ECサイトなど、Web制作に関わるサポートが可能です。</p>
-                    <p>公務員時代は事務業務を一通り経験し、市の主催するイベントの企画運営に携わりました。</p>
-                    <p>丁寧に、根気強く対応できることが長所と考えており、クライアント様、そしてホームページに訪れるユーザー様にご満足いただけるサービスを一緒に作り上げようと心がけております。</p>
-                    <p>Web制作に関して、質問、ご要望などございましたら、お気軽にお問い合わせください。</p>
-                    <p>どうぞよろしくお願いいたします。</p>
-                  </article>
+                <!---Start Animation -->
+                <div data-aos="fade-up" data-aos-duration="2000">
+                  <h3 class="col-12 text-center">
+                    Webフリーランスへの挑戦
+                  </h3>
+                  <div class="message col-12 mx-auto">
+                    <article>
+                      <p>はじめまして、玉井志昂と申します。</p>
+                      <p>地方公務員を4年で辞め、タイへ移住し、フリーランスとして活動しています。</p>
+                      <p>コーディング、ホームページ制作、ECサイトなど、Web制作に関わるサポートが可能です。</p>
+                      <p>公務員時代は事務業務を一通り経験し、市の主催するイベントの企画運営に携わりました。</p>
+                      <p>丁寧に、根気強く対応できることが長所と考えており、クライアント様、そしてホームページに訪れるユーザー様にご満足いただけるサービスを一緒に作り上げようと心がけております。</p>
+                      <p>Web制作に関して、質問、ご要望などございましたら、お気軽にお問い合わせください。</p>
+                      <p>どうぞよろしくお願いいたします。</p>
+                    </article>
+                  </div>
                 </div>
+                <!---End Animation -->
                 <!--  // Article -->
               </div><!-- // Row -->
             </div><!-- // .container -->
@@ -128,14 +132,14 @@
             <div class="container">
               <div class="row text-center">
                 <!-- Heading -->
-                <div class="col-12 text-center">
+                <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="600">
                   <h2 class="heading">about</h2>
                   <div class="heading-underline"></div>
                 </div>
                 <!-- // Heading -->
 
                 <!--  Article -->
-                <div class="my-photo col-md-12 col-lg-6">
+                <div class="my-photo col-md-12 col-lg-6" data-aos="zoom-in-right" data-aos-duration="2000">
                   <!-- Photo -->
                   <img src="./img/id-photo-2.jpg" alt="プロフィール写真" class="rounded-circle">
                   <!-- // Photo -->
@@ -152,7 +156,7 @@
                 </div>
                 <!-- // Article -->
                 <!-- Table -->
-                <div class="col-md-12 col-lg-6 d-flex align-items-center">
+                <div class="col-md-12 col-lg-6 d-flex align-items-center" data-aos="zoom-in-left" data-aos-duration="2000">
                   <table class="table table-bordered mx-auto bg-white">
                     <tbody>
                       <tr>
@@ -193,7 +197,9 @@
                   </table>
                 </div>
                 <!-- // Table -->
-                <div class="col-12">
+                <div class="col-12" data-aos="flip-up"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
                   <a href="#contact" class="btn btn-outline-dark btn-lg">お問い合わせ</a>
                 </div>
               </div><!-- // Row -->
@@ -209,12 +215,12 @@
             <div class="container">
               <div class="row">
                 <!-- Heading -->
-                <div class="col-12 text-center">
+                <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="600">
                   <h2 class="heading">skill</h2>
                   <div class="heading-underline"></div>
                 </div>
                 <!-- icons -->
-                <div class="box col-12">
+                <div class="box col-12" data-aos="fade-down" data-aos-duration="2000">
                   <!-- 1段目 -->
                   <div class="icons row p-0 p-md-3">
                     <div class="skl-icons col-12 col-md-6 d-flex mx-auto p-0">
@@ -266,10 +272,10 @@
                     </div>
                   </div>
                 </div>
-                <div class="box skls col-12 text-center">
+                <div class="box skls col-12 text-center" data-aos="fade-down" data-aos-duration="2000">
                   HTML, CSS, JavaScript,  PHP, WordPress jQuery,  Laravel, Saas, MAMP, MySQL, Word, Excel, VBA, Power Point
                 </div>
-                <div class="box other-skl bg-light col-12">
+                <div class="box other-skl bg-light col-12" data-aos="fade-down" data-aos-duration="2000">
                   <table>
                     <tbody>
                       <tr>
@@ -282,11 +288,6 @@
                       </tr>
                     </tbody>
                   </table>
-                      <!-- <dl>
-                        <dt>その他のスキル</dt>
-                        <dd>TOEIC 860, 日本語教師養成講座420時間修了資格</dd>
-                      </dl> -->
-
                     </div>
                   </div><!-- // Row -->
                 </div><!-- // .container -->
@@ -302,7 +303,7 @@
             <div class="full-screen"><!-- Full Screen -->
               <div class="narrow">
                 <div class="container">
-                  <div class="row text-center">
+                  <div class="row text-center" data-aos="fade-up" data-aos-duration="600">
                     <!-- Heading -->
                     <div class="col-12">
                       <h2 class="heading">service</h2>
@@ -310,7 +311,7 @@
                     </div>
                     <!-- // Heading -->
                     <div class="box d-flex pt-5">
-                      <div class="col-md-6 col-lg-4">
+                      <div class="col-md-6 col-lg-4" data-aos="fade-right" data-aos-duration="1000">
                         <h3>ホームページ制作</h3>
                         <div class="service p-5">
                           <i class="fab fa-wordpress fa-5x"></i>
@@ -319,7 +320,7 @@
                           企画から制作、運営サポートまで、お気軽にご相談ください。レスポンシブ化にも対応いたします
                         </p>
                       </div>
-                      <div class="col-md-6 col-lg-4">
+                      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000">
                         <h3>LP制作</h3>
                         <div class="service p-5">
                           <i class="fas fa-desktop fa-5x"></i>
@@ -328,7 +329,7 @@
                           商品紹介、イベント予約、キャンペーンなど集客アップにつながるLP制作を承ります。
                         </p>
                       </div>
-                      <div class="col-md-12 col-lg-4">
+                      <div class="col-md-12 col-lg-4" data-aos="fade-left" data-aos-duration="1000">
                         <h3>コーポレートサイト</h3>
                         <div class="service p-5">
                           <i class="fas fa-code fa-5x"></i>
@@ -351,7 +352,7 @@
                 <div class="container">
                   <div class="row">
                     <!-- Heading -->
-                    <div class="col-12 text-center">
+                    <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="600">
                       <h2 class="heading">portfolio</h2>
                       <div class="heading-underline"></div>
                     </div>
@@ -376,7 +377,7 @@
                 <div class="container">
                   <div class="row">
                     <!-- Heading -->
-                    <div class="col-12 text-center">
+                    <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="600">
                       <h2 class="heading">contact</h2>
                       <div class="heading-underline"></div>
                     </div>
@@ -457,7 +458,11 @@
       <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
       <!-- vegas -->
       <script src="js/vegas.min.js"></script>
-
+      <!-- aos (scroll animation) -->
+      <script src="js/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
       <!--original js -->
       <script src="js/main.js"></script>
       <!--- End of Script Source Files -->

@@ -91,10 +91,37 @@ $(function(){
 ---------------------------------------------------------- */
 $(function() { //when document is ready
   $(window).scroll(function() { //when webpage is scrolled
-    if ($(this).scrollTop() > 700) { //if scroll from top is more than 500
+    if ($(this).scrollTop() > 500) { //if scroll from top is more than 500
       $('.top-scroll').fadeIn(); //display element with class 'top-scroll'; opacity increases
     } else { //if not
       $('.top-scroll').fadeOut(); //hide element with class 'top-scroll'; opacity decreases
     }
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+/*========== Fade in letter by letter ==========*/
+/* ---------------------------------------------------------
+ 一文字ずつ表示する
+---------------------------------------------------------- */
+// $(function() {
+// 			var $allMsg = $('要素');
+// 			var $wordList = $('要素').html().split("");
+// 			$('要素').html("");
+// 			$.each($wordList, function(idx, elem) {
+// 				var newEL = $("<span/>").text(elem).css({ opacity: 0 });
+// 				newEL.appendTo($allMsg);
+// 				newEL.delay(idx * 70);
+// 				newEL.animate({ opacity: 1 }, 1100);
+// 			});
+// });
+// https://qiita.com/Simmon/items/7ff63e61646888c8dcf3
