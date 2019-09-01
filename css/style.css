@@ -371,7 +371,7 @@ span.sm {
 .top-scroll svg.svg-inline--fa {
   font-size: 3rem;
   height: 1.7rem;
-  color: #53595f;
+  color: #535353;
   background: #fff;
 }
 
@@ -379,13 +379,13 @@ a.top-scroll {
   right: 1.2rem;
   bottom: 1.2rem;
   position: fixed;
-  opacity: .3;
+  opacity: .4;
   z-index: 1000;
   display: none;
 }
 
 a.top-scroll:hover {
-  opacity: .5;
+  opacity: .9;
 }
 
 footer .row p {
