@@ -6,6 +6,14 @@
  @media (min-width: 576px) {
 	//画面サイズが 最低でも必要 576px
 	// 576px 以上のブラウザ幅で有効
+	/* ============== Common ============== */
+	body {
+		letter-spacing: .2rem;
+	}
+	/* ============== Header ============== */
+	#navbarResponsive ul li a {
+		font-size: .9rem;
+	}
 	/* ============== Header ============== */
 	.caption {
 		h1 {
@@ -17,14 +25,21 @@
 	}
 	/* ============ Main Common =========== */
 	.narrow {
-		width: 75%;
+		width: 80%;
 		margin: auto;
 		padding-top: 2rem;
 	}
-	h2.heading {
-		margin-bottom: 1.9rem;
-	}
 
+	/* =========== Message Section =========== */
+	#message {
+		.v-cnt {
+		height: 75vh;
+		}
+		p {
+			font-size: 1.2rem;
+			letter-spacing: .2rem;
+		}
+	}
 	/* =========== About Section =========== */
 	.my-photo img {
 		max-width: 50%;
@@ -32,5 +47,40 @@
 	#about table {
 		min-width: 405px;
 	}
+	#about table {
+  tbody tr th {
+    min-width: 8rem;
+  }
+  tbody tr td {
+  }
+}
+	/* =========== Skill Section =========== */
+	#skill img {
+		width: 100%;
+		height:100%;
+		max-width: 100px;
+		max-height: 100px;
+		padding:1rem;
+}
+	/* =========== Service Section =========== */
+	#service {
+		.col-md-6.col-lg-4 {
+			max-width: 425px;
+		}
+		p {
+			padding-right: 0;
+			padding-left: 0;
+		}
+	.svg-inline--fa.fa-desktop,
+	.svg-inline--fa.fa-code
+	 {
+		height: 96px;
+	}
+	}
+
+
+	/* =========== Portfolio Section =========== */
+
+	/* =========== Contact Section =========== */
 
 }

@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/* =======================================
+          MediaQuery(TAB)
+ 　(画面サイズ 576px 以上 684px以下のスマホ・タブレット用)
+ ======================================= */
+ // PC画面を狭めたときにメニューが切れるため
+ @media (min-width: 576px) and (max-width: 684px) {
+ 	/* ============== Navigation ============== */
+ 	.navbar {
+ 		height: 62.593px;
+ 		#navbarResponsive li a {
+ 			font-size: .7rem;
+ 			line-height: 21.6px;
+ 		}
+ 	}
+ 	/* ============== Message ============== */
+ 	#message {
+ 		p {
+ 			font-size: 1.15rem;
+ 			letter-spacing: .2rem;
+ 			margin-bottom: .7rem;
+ 		}
+ 	}
+ }
+
+ /* =======================================
+          MediaQuery(Mobile)
+ 　(画面サイズ 480px以下のスマホ用)
+ ======================================= */
+@media screen and (max-width: 480px) {
+	[data-aos=fade-up-right],
+	[data-aos=fade-up-left],
+	[data-aos=fade-right],
+	#service [data-aos=fade-up],
+	[data-aos=fade-left]
+	{
+		transform: none;
+	}
+}
+ /* =======================================
+          MediaQuery(iPad Pro縦)
+ 　(画面サイズ 480px以下のスマホ用)
+ ======================================= */
+// @media screen and (max-width: 1024px) and (orientation: portrait){
+// 	#message .v-cnt {
+// 		height: 50vh;
+// 	}
+// 	.full-screen {
+// 		min-height: 0;
+// 	}
+// 	.fixed-wrap {
+// 		height: 100%;
+// 	}
+// }

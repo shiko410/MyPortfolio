@@ -3,11 +3,16 @@
         	MediaQuery(PC)
   　　(画面サイズ 768px 以上のタブレット・PC用)
   ======================================= */
-  /* =========== About Section =========== */
-  @media (min-width: 768px) {
-	//画面サイズが 最低でも必要 768px
-	// 768px 以上のブラウザ幅で有効
-	/* スムーススクロール時の余白 */
+/* =========== About Section =========== */
+@media (min-width: 768px) {
+//画面サイズが 最低でも必要 768px
+// 768px 以上のブラウザ幅で有効
+/* スムーススクロール時の余白 */
+	body {
+		p {
+			font-size: 1.1rem;
+		}
+	}
 	.offset:before {
 		height: 3.9rem;
 		margin-top: -3.9rem;
@@ -15,5 +20,8 @@
 	.my-photo img {
 		width: 200px;
 		max-width: none;
+	}
+	#service h3 {
+		font-size: 2.2vw;
 	}
 }
